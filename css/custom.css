@@ -1,0 +1,24 @@
+.section-overlay {
+    position: relative;
+}
+
+.section-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(84, 91, 98, 0.055);
+    z-index: 0;
+}
+
+.section-overlay .player {
+    position: relative;
+    z-index: 1;
+}
+
+.section-overlay h2 {
+    position: relative;
+    z-index: 1;
+}
