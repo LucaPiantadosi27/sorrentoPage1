@@ -3,19 +3,130 @@
 }
 
 .section-overlay::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(84, 91, 98, 0.055);
     z-index: 0;
 }
 
-.section-overlay .player {
+.section-overlay > * {
     position: relative;
     z-index: 1;
+}
+
+/* Team Cards Styling */
+.team-card {
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Solo applicare l'effetto hover quando non c'è un overlay attivo */
+.team-card:hover:not(.overlay-active) {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.team-header {
+    text-align: center;
+}
+
+.badge-primary {
+    background-color: #ee1e46;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Player List in Modal */
+.player-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.player-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.player-list li:last-child {
+    border-bottom: none;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(238, 30, 70, 0.2);
+    background-color: #f8f9fa;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(238, 30, 70, 0.2);
+    background-color: #f8f9fa;
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+/* Team Cards Styling */
+.team-card {
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Feature Items Styling */
+.feature-item {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.feature-item .icon {
+    font-size: 40px;
+    color: #ee1e46;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.feature-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #666;
 }
 
 .section-overlay h2 {

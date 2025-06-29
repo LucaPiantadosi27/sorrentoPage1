@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
     
   </head>
   <body>
@@ -69,15 +69,15 @@
           </li>
         <li><a href="matches.html">Partite</a></li>
         <li><a href="team.html">Team</a></li>
+        <li class="active"><a href="settore-giovanile.html">Settore Giovanile</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="contact.html">Contatti</a></li>
-        <li class="active"><a href="youth_sector.html">Settore Giovanile</a></li>
       </ul>
     </div>
   </nav>
 </header>
   
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-start">
           <div class="col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="400">
@@ -93,6 +93,7 @@
         <div class="row mb-5">
           <div class="col-md-12 text-center">
             <h2 class="text-black">Articoli dal Settore Giovanile</h2>
+            <p class="lead">Le ultime notizie, eventi e successi dei nostri giovani talenti</p>
           </div>
         </div>
         <div class="row mb-5">
@@ -142,66 +143,74 @@
 
         <div class="row">
           <div class="col-md-4 mb-5">
-            <div class="p-4 border mb-3 bg-white">
-              <h3 class="mb-3">Under 15</h3>
+            <div class="p-4 border mb-3 bg-white team-card">
+              <div class="team-header mb-3">
+                <img src="images/img_1.jpg" alt="Under 15" class="img-fluid rounded mb-3">
+                <h3 class="mb-2">Under 15</h3>
+                <span class="badge badge-primary">Campionato Regionale</span>
+              </div>
               <p class="mb-4">La nostra squadra Under 15 è composta da giovani promesse che si allenano con impegno e dedizione per raggiungere i loro obiettivi.</p>
-              <div class="dropdown">
-                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownU15" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Lista Giocatori
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownU15">
-                  <a class="dropdown-item" href="#">Giocatore 1 (U15)</a>
-                  <a class="dropdown-item" href="#">Giocatore 2 (U15)</a>
-                  <a class="dropdown-item" href="#">Giocatore 3 (U15)</a>
-                  <a class="dropdown-item" href="#">Giocatore 4 (U15)</a>
-                  <a class="dropdown-item" href="#">Giocatore 5 (U15)</a>
-                </div>
-              </div>
+              <button class="btn btn-primary btn-sm show-players" type="button" data-team="under15" data-img="images/img_1.jpg">
+                Lista Giocatori
+              </button>
             </div>
           </div>
           <div class="col-md-4 mb-5">
-            <div class="p-4 border mb-3 bg-white">
-              <h3 class="mb-3">Under 17</h3>
+            <div class="p-4 border mb-3 bg-white team-card">
+              <div class="team-header mb-3">
+                <img src="images/img_2.jpg" alt="Under 17" class="img-fluid rounded mb-3">
+                <h3 class="mb-2">Under 17</h3>
+                <span class="badge badge-primary">Campionato Regionale</span>
+              </div>
               <p class="mb-4">L'Under 17 rappresenta un passo fondamentale nella crescita dei nostri atleti, con un focus sul perfezionamento tecnico-tattico.</p>
-              <div class="dropdown">
-                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownU17" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Lista Giocatori
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownU17">
-                  <a class="dropdown-item" href="#">Giocatore 1 (U17)</a>
-                  <a class="dropdown-item" href="#">Giocatore 2 (U17)</a>
-                  <a class="dropdown-item" href="#">Giocatore 3 (U17)</a>
-                  <a class="dropdown-item" href="#">Giocatore 4 (U17)</a>
-                  <a class="dropdown-item" href="#">Giocatore 5 (U17)</a>
-                </div>
-              </div>
+              <button class="btn btn-primary btn-sm show-players" type="button" data-team="under17" data-img="images/img_2.jpg">
+                Lista Giocatori
+              </button>
             </div>
           </div>
           <div class="col-md-4 mb-5">
-            <div class="p-4 border mb-3 bg-white">
-              <h3 class="mb-3">Under 19</h3>
-              <p class="mb-4">La squadra Under 19 prepara i talenti più promettenti al passaggio nel calcio a 5 di alto livello, con allenamenti intensivi e partite sfidanti.</p>
-              <div class="dropdown">
-                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownU19" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Lista Giocatori
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownU19">
-                  <a class="dropdown-item" href="#">Giocatore 1 (U19)</a>
-                  <a class="dropdown-item" href="#">Giocatore 2 (U19)</a>
-                  <a class="dropdown-item" href="#">Giocatore 3 (U19)</a>
-                  <a class="dropdown-item" href="#">Giocatore 4 (U19)</a>
-                  <a class="dropdown-item" href="#">Giocatore 5 (U19)</a>
-                </div>
+            <div class="p-4 border mb-3 bg-white team-card">
+              <div class="team-header mb-3">
+                <img src="images/img_3.jpg" alt="Under 19" class="img-fluid rounded mb-3">
+                <h3 class="mb-2">Under 19</h3>
+                <span class="badge badge-primary">Campionato Nazionale</span>
               </div>
+              <p class="mb-4">La squadra Under 19 prepara i talenti più promettenti al passaggio nel calcio a 5 di alto livello, con allenamenti intensivi e partite sfidanti.</p>
+              <button class="btn btn-primary btn-sm show-players" type="button" data-team="under19" data-img="images/img_3.jpg">
+                Lista Giocatori
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="row align-items-center mb-5">
-          <div class="col-md-12 text-center">
+        <div class="row align-items-center mb-5 section-overlay">
+          <div class="col-md-12 text-center p-5">
             <h2 class="text-black">Unisciti al Nostro Settore Giovanile!</h2>
-            <p class="lead">Se sogni di diventare un campione di futsal, Sorrento Futsal è il posto giusto per te. Offriamo allenamenti professionali, un ambiente stimolante e la possibilità di crescere nel mondo del calcio a 5. Contattaci per maggiori informazioni sui nostri programmi giovanili!</p>
-            <p><a href="#contactFormSection" class="btn btn-primary btn-lg rounded-0">Contattaci Subito</a></p>
+            <p class="lead">Se sogni di diventare un campione di futsal, Sorrento Futsal è il posto giusto per te. Offriamo allenamenti professionali, un ambiente stimolante e la possibilità di crescere nel mondo del calcio a 5.</p>
+            <div class="row justify-content-center mt-4">
+              <div class="col-md-4 mb-3">
+                <div class="feature-item">
+                  <span class="icon icon-trophy"></span>
+                  <h4>Allenatori Qualificati</h4>
+                  <p>Staff tecnico con esperienza nel settore giovanile</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="feature-item">
+                  <span class="icon icon-shield"></span>
+                  <h4>Strutture Moderne</h4>
+                  <p>Campi regolamentari e attrezzature all'avanguardia</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="feature-item">
+                  <span class="icon icon-star"></span>
+                  <h4>Percorso di Crescita</h4>
+                  <p>Possibilità di passaggio alla prima squadra</p>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4"><a href="#contactFormSection" class="btn btn-primary btn-lg rounded-0">Contattaci Subito</a></p>
           </div>
         </div>
       </div>
@@ -209,9 +218,14 @@
 
     <div class="site-section bg-light" data-aos="fade-up" id="contactFormSection">
       <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 text-center">
+            <h2 class="text-black">Entra a Far Parte della Famiglia Sorrento Futsal</h2>
+            <p class="lead">Compila il modulo per ricevere informazioni sulle iscrizioni al settore giovanile</p>
+          </div>
+        </div>
         <div class="row align-items-first">
           <div class="col-md-7">
-            <h2 class="text-black mb-4">Modulo di Contatto Settore Giovanile</h2>
             <form action="#" method="post" class="bg-white">
               
               <div class="p-3 p-lg-5 border">
@@ -403,6 +417,30 @@
       </div>
     </footer>
   </div>
+  
+  <!-- Modal centralizzato per i giocatori -->
+  <div class="modal fade" id="playersModal" tabindex="-1" role="dialog" aria-labelledby="playersModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="playersModalLabel">Giocatori</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalTeamImage" src="" alt="Team" class="img-fluid rounded mb-3">
+          <h4 id="modalTeamTitle" class="mb-3"></h4>
+          <ul class="player-list" id="modalPlayersList">
+            <!-- Player list will be populated dynamically -->
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -416,6 +454,71 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  
+  <script>
+  // Dati dei giocatori per ogni squadra
+  const teamPlayers = {
+    under15: [
+      "Giocatore 1 (U15)",
+      "Giocatore 2 (U15)",
+      "Giocatore 3 (U15)",
+      "Giocatore 4 (U15)",
+      "Giocatore 5 (U15)"
+    ],
+    under17: [
+      "Giocatore 1 (U17)",
+      "Giocatore 2 (U17)",
+      "Giocatore 3 (U17)",
+      "Giocatore 4 (U17)",
+      "Giocatore 5 (U17)"
+    ],
+    under19: [
+      "Giocatore 1 (U19)",
+      "Giocatore 2 (U19)",
+      "Giocatore 3 (U19)",
+      "Giocatore 4 (U19)",
+      "Giocatore 5 (U19)"
+    ]
+  };
+  
+  // Titoli delle squadre
+  const teamTitles = {
+    under15: "Giocatori Under 15",
+    under17: "Giocatori Under 17",
+    under19: "Giocatori Under 19"
+  };
+  
+  // Gestione del click sui pulsanti "Lista Giocatori"
+  document.addEventListener('DOMContentLoaded', function() {
+    const showPlayerButtons = document.querySelectorAll('.show-players');
+    
+    showPlayerButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const teamName = this.getAttribute('data-team');
+        const teamImage = this.getAttribute('data-img');
+        
+        // Imposta l'immagine nel modal
+        document.getElementById('modalTeamImage').src = teamImage;
+        
+        // Imposta il titolo nel modal
+        document.getElementById('modalTeamTitle').textContent = teamTitles[teamName];
+        
+        // Popola la lista dei giocatori
+        const playersList = document.getElementById('modalPlayersList');
+        playersList.innerHTML = '';
+        
+        teamPlayers[teamName].forEach(player => {
+          const li = document.createElement('li');
+          li.textContent = player;
+          playersList.appendChild(li);
+        });
+        
+        // Mostra il modal
+        $('#playersModal').modal('show');
+      });
+    });
+  });
+  </script>
     
   </body>
 </html>
